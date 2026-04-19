@@ -1,0 +1,127 @@
+{
+  "theme": "dark",
+  "archetype": "2 (The Performance Pro)",
+  "vibe": "AAA Premium Sports Management Game (eFootball / FM style)",
+  "colors": {
+    "background": {
+      "base": "#0A0A0A",
+      "surface": "#121212",
+      "surface_glass": "rgba(0, 0, 0, 0.6)",
+      "overlay": "rgba(0, 0, 0, 0.8)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A0A0A0",
+      "muted": "#555555"
+    },
+    "accent": {
+      "primary": "#00E676",
+      "primary_hover": "#00C853",
+      "secondary": "#007AFF",
+      "gold": "#FFD700",
+      "danger": "#FF3B30"
+    },
+    "border": {
+      "default": "rgba(255, 255, 255, 0.1)",
+      "focus": "#00E676",
+      "grid": "rgba(255, 255, 255, 0.05)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Bebas Neue, sans-serif",
+      "body": "Exo 2, sans-serif",
+      "monospace": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl tracking-wider uppercase",
+      "h2": "text-3xl md:text-4xl tracking-wide uppercase",
+      "h3": "text-xl md:text-2xl tracking-normal uppercase",
+      "body": "text-base tracking-normal",
+      "small": "text-sm text-[#A0A0A0]",
+      "tiny_label": "text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#A0A0A0]"
+    }
+  },
+  "spacing_and_layout": {
+    "grid_system": {
+      "manager_hq": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-6",
+      "squad_view": "grid grid-cols-1 lg:grid-cols-12 gap-6"
+    },
+    "containers": {
+      "glass_panel": "bg-black/60 backdrop-blur-xl border border-white/10 rounded-md p-6 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+      "solid_panel": "bg-[#121212] border border-white/5 rounded-md p-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#00E676] text-black font-bold uppercase tracking-wider hover:bg-[#00C853] transition-colors rounded-sm px-6 py-3",
+      "secondary": "bg-transparent border border-white/20 text-white font-bold uppercase tracking-wider hover:bg-white/10 transition-colors rounded-sm px-6 py-3",
+      "danger": "bg-transparent border border-[#FF3B30] text-[#FF3B30] hover:bg-[#FF3B30] hover:text-white transition-colors rounded-sm px-6 py-3"
+    },
+    "player_card": {
+      "wrapper": "relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0A0A0A] border border-white/10 rounded-md p-4 flex flex-col items-center hover:-translate-y-1 transition-transform cursor-pointer",
+      "rating": "absolute top-2 right-2 text-xl font-heading text-[#FFD700]"
+    },
+    "tables": {
+      "wrapper": "w-full text-left border-collapse",
+      "th": "bg-[#121212] text-[#A0A0A0] text-xs uppercase tracking-[0.1em] py-3 px-4 border-b border-white/10",
+      "td": "py-4 px-4 border-b border-white/5 text-sm font-body text-white"
+    },
+    "navigation": {
+      "sidebar": "fixed left-0 top-0 h-screen w-20 md:w-64 bg-black border-r border-white/10 flex flex-col z-50",
+      "link_active": "flex items-center gap-4 px-6 py-4 text-[#00E676] bg-white/5 border-r-2 border-[#00E676]",
+      "link_inactive": "flex items-center gap-4 px-6 py-4 text-[#A0A0A0] hover:text-white hover:bg-white/5 transition-colors"
+    }
+  },
+  "screens": {
+    "manager_hq": {
+      "layout": "Full screen stadium background with heavy dark overlay. Bento grid for 'Next Match' (Hero span-full), 'League Standings' summary, 'Finances', and 'Inbox'.",
+      "background_image_key": "stadium_night"
+    },
+    "squad_and_tactics": {
+      "layout": "Split view: Left 70% shows the 2D Pitch top-down graphic with player dots. Right 30% shows the substitute bench and tactic controls (sliders/selects).",
+      "background_image_key": "pitch_top_down"
+    },
+    "match_live": {
+      "layout": "Massive Scoreboard at top. Middle area features a terminal-like auto-scrolling minute-by-minute text commentary. Bottom area for live tactical adjustments.",
+      "background_image_key": "stadium_night"
+    },
+    "transfer_market": {
+      "layout": "Dense data tables with filters on the left sidebar. High contrast player rows. Highlights in gold for high overall ratings."
+    }
+  },
+  "media": {
+    "images": {
+      "stadium_night": {
+        "url": "https://images.pexels.com/photos/35898730/pexels-photo-35898730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "background",
+        "description": "Aerial view of a night football match. Use as full page background with bg-black/80 overlay."
+      },
+      "pitch_top_down": {
+        "url": "https://images.unsplash.com/photo-1635272340267-84d197fe6ded?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjBwaXRjaCUyMGdyYXNzJTIwdG9wJTIwZG93bnxlbnwwfHx8fDE3NzY1ODExMTV8MA&ixlib=rb-4.1.0&q=85",
+        "category": "component_background",
+        "description": "Top-down view of a soccer field. Use as the background for the tactical formation board."
+      },
+      "locker_room": {
+        "url": "https://images.pexels.com/photos/6408720/pexels-photo-6408720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "background",
+        "description": "Locker room. Use as background for Team Selection or Squad screens."
+      }
+    }
+  },
+  "animations": {
+    "hover": "hover:scale-105 transition-transform duration-200 ease-out",
+    "glass_reveal": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility_and_testing": {
+    "test_id_rule": "ALL interactive elements MUST have data-testid. Format: kebab-case, role-based. e.g. data-testid='start-match-btn'"
+  },
+  "instructions_to_main_agent": [
+    "Use standard HTML + Tailwind for complex asymmetrical layouts like Manager HQ bento grid.",
+    "Use Shadcn UI for standard forms, selects, dialogs but override classes to match the dark glassmorphism theme.",
+    "Install and use lucide-react or @phosphor-icons/react for game menu icons.",
+    "For the pitch graphic, use relative positioning inside an aspect-ratio container with absolute positioned player dots.",
+    "Do NOT use pure #000000, use #0A0A0A for deepest backgrounds.",
+    "Embed Google Fonts: 'Bebas Neue' and 'Exo 2' in index.html or import in CSS."
+  ]
+}
